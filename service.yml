@@ -1,0 +1,58 @@
+---
+ - name: start the services
+   hosts: yaml
+   tasks:
+      - name: start httpd
+        service:
+         name: httpd
+         state: started
+
+      - name: start sshd
+        service:
+         name: sshd
+         state: started
+
+      - name: start vsftpd
+        service:
+         name: vsftpd
+         state: started
+
+      - name: start smb
+        service:
+         name: smb
+         state: started
+
+      - name: start nfs
+        service:
+         name: nfs
+         state: started
+
+      - name: start autofs
+        service:
+         name: autofs
+         state: started
+
+      - name: start ntpd
+        service:
+         name: ntpd
+         state: started
+
+      - name: start rsyslog
+        service:
+         name: rsyslog
+         state: started
+
+      - name: start crond
+        service:
+         name: crond
+         state: started
+
+      - name: stop iptables
+        service:
+         name: iptables
+         state: stopped
+
+      - name: start NetworkManager
+        service:
+         name: NetworkManager
+         state: stopped
