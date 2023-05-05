@@ -1,0 +1,7 @@
+---
+ - name:  case 4
+   hosts: yaml
+   tasks:
+      - name: using filetes
+        debug:
+          msg: " the host name is: {{inventory_hostname}}"
